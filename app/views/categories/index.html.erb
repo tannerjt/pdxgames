@@ -1,3 +1,4 @@
+
 <div class="row">
     <div class="col-lg-12">
         <h1 class="page-header">
@@ -7,6 +8,11 @@
     </div>
 </div>
 
+<% if user_signed_in? %>
+<center>
+  <%= link_to "New Hipster Category", new_category_path %>
+</center>
+<% end %>
 <!-- Team Members Row -->
 <div class="row">
     <div class="col-lg-12">
@@ -14,41 +20,41 @@
     </div>
     <div class="col-lg-4 col-sm-6 text-center">
       <%= image_tag "bicycle/bicycle_double1.jpg", class: "img-circle img-responsive img-center controlled-image" %>
-        <h3>Multi-decker moto-cross
+        <a><h3>Multi-decker moto-cross
 
         </h3>
-        <p>What does this team member to? Keep it short! This is also a great spot for social links!</p>
+        <p>What does this team member to? Keep it short! This is also a great spot for social links!</p></a>
     </div>
     <div class="col-lg-4 col-sm-6 text-center">
       <%= image_tag "Recycle/recycle_car.jpg", class: "img-circle img-responsive img-center controlled-image" %>
-        <h3>Extreme Recycling
+        <a><h3>Extreme Recycling
         </h3>
-        <p>What does this team member to? Keep it short! This is also a great spot for social links!</p>
+        <p>What does this team member to? Keep it short! This is also a great spot for social links!</p></a>
     </div>
     <div class="col-lg-4 col-sm-6 text-center">
       <%= image_tag "bird/bird_car.jpg", class: "img-circle img-responsive img-center controlled-image" %>
-        <h3>Extreme Bird Placement
+        <a><h3>Extreme Bird Placement
         </h3>
-        <p>What does this team member to? Keep it short! This is also a great spot for social links!</p>
+        <p>What does this team member to? Keep it short! This is also a great spot for social links!</p></a>
     </div>
     <div class="col-lg-4 col-sm-6 text-center">
       <%= image_tag "drunken/drunken_thongs.jpg", class: "img-circle img-responsive img-center controlled-image" %>
-        <h3>Drunken Marathon
+        <a><h3>Drunken Marathon
         </h3>
-        <p>What does this team member to? Keep it short! This is also a great spot for social links!</p>
+        <p>What does this team member to? Keep it short! This is also a great spot for social links!</p></a>
     </div>
     <div class="col-lg-4 col-sm-6 text-center">
       <%= image_tag "californian/califoregon.jpg", class: "img-circle img-responsive img-center controlled-image" %>
-        <h3>Most Out-Of-Place Californian
+        <a><h3>Most Out-Of-Place Californian
         </h3>
-        <p>What does this team member to? Keep it short! This is also a great spot for social links!</p>
+        <p>What does this team member to? Keep it short! This is also a great spot for social links!</p></a>
     </div>
     <div class="col-lg-4 col-sm-6 text-center">
       <%= image_tag "beard/beard_ties.jpg", class: "img-circle img-responsive img-center controlled-image" %>
-        <h3>Beard Tug-O-War
+        <a><h3>Beard Tug-O-War
         </h3>
-        <p>What does this team member to? Keep it short! This is also a great spot for social links!</p>
+        <p>What does this team member to? Keep it short! This is also a great spot for social links!</p></a>
     </div>
 </div>
-
 <hr>
+<%= render @categories %>
