@@ -1,1 +1,7 @@
 <h2>Categories</h2>
+
+<%= render @categories %>
+
+<% if user_signed_in? %>
+  <%= link_to "New Hipster Category", new_category_path %>
+<% end %>
