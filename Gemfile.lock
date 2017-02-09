@@ -41,6 +41,7 @@ GEM
     arel (7.1.4)
     autoprefixer-rails (6.7.2)
       execjs
+    bcrypt (3.1.11)
     bootstrap-sass (3.3.7)
       autoprefixer-rails (>= 5.2.1)
       sass (>= 3.3.4)
@@ -200,4 +201,4 @@ DEPENDENCIES
   web-console (>= 3.3.0)
 
 BUNDLED WITH
-   1.14.3
+   1.13.6

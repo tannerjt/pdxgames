@@ -1,4 +1,6 @@
-<div class="category-container">
+
+<div class="col-lg-4 col-sm-6 text-center">
+  <%= image_tag category.image, class: "img-circle img-responsive img-center controlled-image" %>
   <h3><%= link_to category.title, category %></h3>
   <div class="actions">
     <% if user_signed_in? %>
